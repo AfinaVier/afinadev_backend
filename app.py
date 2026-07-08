@@ -39,4 +39,5 @@ def handle_form():
         return "<h1>Упс! Что-то пошло не так при отправке. Попробуйте еще раз.</h1>", 500
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get('PORT', 10000)
+    app.run(host='0.0.0.0', port=port)
