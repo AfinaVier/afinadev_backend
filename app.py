@@ -1,12 +1,13 @@
+import os
 from flask import Flask, request, jsonify
 import requests
 
 app = Flask(__name__)
 
 
-TELEGRAM_BOT_TOKEN = "your_bot_token"
+TELEGRAM_BOT_TOKEN = os.environ.get("your_bot_token")
 
-YOUR_TELEGRAM_ID = "your_id"
+YOUR_TELEGRAM_ID = os.environ.get("your_id")
 
 @app.route('/submit', methods=['POST'])
 def handle_form():
