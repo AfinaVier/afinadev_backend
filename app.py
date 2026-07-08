@@ -4,9 +4,9 @@ import requests
 app = Flask(__name__)
 
 
-TELEGRAM_BOT_TOKEN = "8624561748:AAHOicSkdl9alt8d9cJNBCpMo1CKFiaa02A"
+TELEGRAM_BOT_TOKEN = "your_bot_token"
 
-YOUR_TELEGRAM_ID = 7957399789
+YOUR_TELEGRAM_ID = "your_id"
 
 @app.route('/submit', methods=['POST'])
 def handle_form():
